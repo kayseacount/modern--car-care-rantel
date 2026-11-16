@@ -1,2 +1,0 @@
-document.addEventListener('change',e=>{if(e.target.id==='pickupDate'){const end=document.getElementById('returnDate');if(end)end.min=e.target.value;}});
-document.addEventListener('submit',e=>{if(e.target.id==='bookingForm'){const a=document.getElementById('pickupDate')?.value,b=document.getElementById('returnDate')?.value;if(a&&b&&b<=a){e.preventDefault();alert('Return date must be after pickup date.');}}});
